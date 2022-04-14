@@ -27,7 +27,6 @@ class SentToSlackJob
             $payload[$key] = $value;
         }
 
-
         Http::post($this->webhookUrl,[
             'blocks' => $payload
         ]);
