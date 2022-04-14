@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeremys\SlackBlockAlert;
+namespace Jeremys\SlackBlockAlert\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
