@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d064a1d6-53f6-4146-b4a2-077af5bb60d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/.styleci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Fortify/ResetUserPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Fortify/UpdateUserPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Actions/Jetstream/DeleteUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/HandleInertiaRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/FortifyServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/JetstreamServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/fortify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/jetstream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/migrations/2022_03_21_104057_create_sessions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/lang/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ActionMessage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ActionSection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ApplicationLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ApplicationMark.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/AuthenticationCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/AuthenticationCardLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Banner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Checkbox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ConfirmationModal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ConfirmsPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/DangerButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/DialogModal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Dropdown.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/DropdownLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/FormSection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/InputError.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Label.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Modal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/NavLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ResponsiveNavLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/SecondaryButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/SectionBorder.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/SectionTitle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/ValidationErrors.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Jetstream/Welcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Layouts/AppLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/API/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/API/Partials/ApiTokenManager.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/ConfirmPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/ForgotPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/ResetPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/TwoFactorChallenge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Auth/VerifyEmail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/PrivacyPolicy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Partials/DeleteUserForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Partials/LogoutOtherBrowserSessionsForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Partials/TwoFactorAuthenticationForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Profile/Show.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/TermsOfService.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/Pages/Welcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/markdown/policy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/markdown/terms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/resources/views/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/AuthenticationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/DeleteAccountTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/EmailVerificationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/PasswordResetTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/ProfileInformationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/RegistrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../groenerewoning/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="27mMwjBddlAmIMOJIdsSl0Co7K8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../groenerewoning" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\slack-block-alert\src\Facades" />
+      <recent name="C:\Projects\slack-block-alert\src\Jobs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d064a1d6-53f6-4146-b4a2-077af5bb60d9" name="Changes" comment="" />
+      <created>1649921049081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649921049081</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
