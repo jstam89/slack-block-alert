@@ -6,15 +6,18 @@ use Illuminate\Support\Facades\Http;
 
 class SentToSlackJob
 {
-    public int $maxExceptions = 3;
+    public int    $maxExceptions = 3;
+    public string $message;
+    public string $line;
+    public string $trace;
+    public string $webhookUrl;
 
-    public function __construct(
-        public string $message,
-        public string $line,
-        public string $trace,
-        public string $webhookUrl
-    )
+    public function __construct(string $message, string $line, string $trace, string $webhookUrl)
     {
+        $this->webhookUrl = $webhookUrl;
+        $this->trace      = $trace;
+        $this->line       = $line;
+        $this->message    = $message;
     }
 
     public function handle(): void
@@ -27,7 +30,7 @@ class SentToSlackJob
             $payload[$key] = $value;
         }
 
-        Http::post($this->webhookUrl,[
+        Http::post($this->webhookUrl, [
             'blocks' => $payload
         ]);
     }
