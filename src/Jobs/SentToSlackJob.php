@@ -18,7 +18,12 @@ class SentToSlackJob
 
     public function handle(): void
     {
-        $payload = ['type' => $this->type, 'text' => $this->text];
+        $payload = sprintf(config('slack-block-alert.blocks'),
+            $this->text,
+            $this->type,
+        );
+
+
 
         Http::post($this->webhookUrl, $payload);
     }

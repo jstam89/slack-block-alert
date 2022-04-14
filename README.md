@@ -14,17 +14,21 @@ You can install the package via composer:
 composer require jeremys/slack-block-alert
 ```
 
-## Usage
+You can set a SLACK_ALERT_WEBHOOK env variable containing a valid Slack webhook URL
+
+### Publisch config files to change the blocks
 
 ```php
-// Usage description here
+php artisan vendor:publish --tag="slack-block-alert-config"
 ```
 
-### Testing
+[comment]: <> (### Testing)
 
-```bash
-composer test
-```
+[comment]: <> (```bash)
+
+[comment]: <> (composer test)
+
+[comment]: <> (```)
 
 ### Changelog
 
@@ -49,4 +53,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 ## Laravel Package Boilerplate
 
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).<br>
+Based on the Spatie/laravel-slack-alerts package.

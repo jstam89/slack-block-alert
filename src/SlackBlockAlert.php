@@ -15,7 +15,6 @@ class SlackBlockAlert
 
     public function message(string $text): void
     {
-        dd($text);
         $webhookUrl = Config::getWebhookUrl($this->webhookUrlName);
 
         if (! $webhookUrl) {
