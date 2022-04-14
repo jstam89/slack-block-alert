@@ -19,14 +19,14 @@ class SentToSlackJob
 
     public function handle(): void
     {
-        $blocks = config('slack-block-alert.blocks');
+        $blocks      = config('slack-block-alert.blocks');
+        $replacement = sprintf(json_encode($blocks), $this->message, $this->line, $this->trace);
+        $payload     = json_decode($replacement);
 
-        $string = sprintf(json_encode($blocks),
-            $this->message,
-            $this->line,
-            $this->trace,
-        );
+        foreach ($payload as $key => $value) {
+            $payload[$key] = $value;
+        }
 
-        Http::post($this->webhookUrl, json_decode($string));
+        Http::post($this->webhookUrl, $payload);
     }
 }
