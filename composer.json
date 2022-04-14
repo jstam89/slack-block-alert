@@ -47,7 +47,7 @@
                 "Jeremys\\SlackBlockAlert\\SlackBlockAlertServiceProvider"
             ],
             "aliases": {
-                "SlackBlockAlert": "Jeremys\\SlackBlockAlert\\SlackBlockAlertFacade"
+                "SlackBlockAlert": "SlackAlert"
             }
         }
     }

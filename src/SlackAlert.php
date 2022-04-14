@@ -5,7 +5,7 @@ namespace Jeremys\SlackBlockAlert;
 use Illuminate\Support\Facades\Facade;
 
 
-class SlackBlockAlertFacade extends Facade
+class SlackAlert extends Facade
 {
     /**
      * Get the registered name of the component.
