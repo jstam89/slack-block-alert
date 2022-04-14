@@ -2,28 +2,26 @@
 
 namespace Jeremys\SlackBlockAlert\Jobs;
 
+use Illuminate\Support\Facades\Http;
+
 class SentToSlackJob
 {
-    public int     $maxExceptions = 3;
-    private string $text;
-    private string $type;
-    private string $webhookUrl;
+    public int $maxExceptions = 3;
 
-    public function __construct(string $text, string $type, string $webhookUrl)
+    public function __construct(
+        public string $message,
+        public string $line,
+        public string $trace,
+        public string $webhookUrl
+    )
     {
-        $this->text       = $text;
-        $this->type       = $text;
-        $this->webhookUrl = $text;
     }
 
     public function handle(): void
     {
-        $payload = sprintf(config('slack-block-alert.blocks'),
-            $this->text,
-            $this->type,
-        );
+        $payload = ['type' => $this->type, 'text' => $this->text];
 
-
+        $blocks = config('slack-block-alert.blocks');
 
         Http::post($this->webhookUrl, $payload);
     }

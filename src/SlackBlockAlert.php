@@ -13,17 +13,18 @@ class SlackBlockAlert
         return $this;
     }
 
-    public function message(string $text): void
+    public function message(string $message, string $line, string $trace): void
     {
         $webhookUrl = Config::getWebhookUrl($this->webhookUrlName);
 
-        if (! $webhookUrl) {
+        if (!$webhookUrl) {
             return;
         }
 
         $jobArguments = [
-            'text' => $text,
-            'type' => 'mrkdown',
+            'message'    => $message,
+            'line'       => $line,
+            'trace'      => $trace,
             'webhookUrl' => $webhookUrl,
         ];
 

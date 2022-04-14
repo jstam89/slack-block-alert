@@ -19,7 +19,7 @@ return [
             "type" => "section",
             "text" => [
                 "type" => "mrkdwn",
-                "text" => ":boom: *%s:*",
+                "text" => ":boom: *Er is een error opgetreden:*",
             ]
         ],
         [
