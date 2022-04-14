@@ -2,7 +2,6 @@
 
 namespace Jeremys\SlackBlockAlert;
 
-use Jeremys\SlackBlockAlert\Facades\SlackAlert;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,7 +17,7 @@ class SlackBlockAlertServiceProvider extends PackageServiceProvider
     public function packageRegistered(): void
     {
         $this->app->bind('slack-block-alert', function () {
-            return new SlackAlert();
+            return new SlackBlockAlert();
         });
     }
 }
