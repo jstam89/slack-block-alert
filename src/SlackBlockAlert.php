@@ -13,7 +13,7 @@ class SlackBlockAlert
         return $this;
     }
 
-    public function message(string $message, string $line, string $trace): void
+    public function message(string $status, string $message, string $stacktrace): void
     {
         $webhookUrl = Config::getWebhookUrl($this->webhookUrlName);
 
@@ -22,10 +22,10 @@ class SlackBlockAlert
         }
 
         $jobArguments = [
-            'message'    => $message,
-            'line'       => $line,
-            'trace'      => $trace,
-            'webhookUrl' => $webhookUrl,
+            'status'      => $status,
+            'message'     => $message,
+            '$stacktrace' => $stacktrace,
+            'webhookUrl'  => $webhookUrl,
         ];
 
         $job = Config::getJob($jobArguments);

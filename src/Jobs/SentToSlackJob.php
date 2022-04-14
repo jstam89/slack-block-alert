@@ -8,30 +8,49 @@ class SentToSlackJob
 {
     public int    $maxExceptions = 3;
     public string $message;
-    public string $line;
-    public string $trace;
+    public string $status;
+    public string $stacktrace;
     public string $webhookUrl;
 
-    public function __construct(string $message, string $line, string $trace, string $webhookUrl)
+    public function __construct(string $status, string $message, string $stacktrace, string $webhookUrl)
     {
         $this->webhookUrl = $webhookUrl;
-        $this->trace      = $trace;
-        $this->line       = $line;
+        $this->status     = $status;
         $this->message    = $message;
+        $this->stacktrace = $stacktrace;
     }
 
     public function handle(): void
     {
-        $blocks      = config('slack-block-alert.blocks');
-        $replacement = sprintf(json_encode($blocks), $this->message, $this->line, $this->trace);
-        $payload     = json_decode($replacement);
-
-        foreach ($payload as $key => $value) {
-            $payload[$key] = $value;
-        }
+        $blocks = config('slack-block-alert.blocks');
 
         Http::post($this->webhookUrl, [
-            'blocks' => $payload
+            "blocks" => [
+                [
+                    "type" => "section",
+                    "text" => [
+                        "type" => "mrkdwn",
+                        "text" => sprintf(":boom: *Error in:* %s", config('app.name')),
+                    ]
+                ],
+                [
+                    "type" => "divider"
+                ],
+                [
+                    "type" => "section",
+                    "text" => [
+                        "type" => "mrkdwn",
+                        "text" => sprintf('*Message:* %s', $this->message),
+                    ],
+                ],
+                [
+                    "type" => "section",
+                    "text" => [
+                        "type" => "mrkdwn",
+                        "text" => sprintf('*StackTrace:* ```%s```', $this->stacktrace),
+                    ],
+                ]
+            ]
         ]);
     }
 }

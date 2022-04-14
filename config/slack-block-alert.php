@@ -14,37 +14,5 @@ return [
      */
     'job'          => \Jeremys\SlackBlockAlert\Jobs\SentToSlackJob::class,
 
-    "blocks" => [
-        [
-            "type" => "section",
-            "text" => [
-                "type" => "mrkdwn",
-                "text" => ":boom: *Er is een error opgetreden:*",
-            ]
-        ],
-        [
-            "type" => "divider"
-        ],
-        [
-            "type" => "section",
-            "text" => [
-                "type" => "mrkdwn",
-                "text" => '*Exception:* %s',
-            ],
-        ],
-        [
-            "type" => "section",
-            "text" => [
-                "type" => "mrkdwn",
-                "text" => ' *Line:* %s',
-            ],
-        ],
-        [
-            "type" => "section",
-            "text" => [
-                "type" => "mrkdwn",
-                "text" => '*StackTrace:* %s',
-            ],
-        ]
-    ]
+
 ];
