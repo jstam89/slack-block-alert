@@ -36,13 +36,6 @@ return [
             "type" => "section",
             "text" => [
                 "type" => "mrkdwn",
-                "text" => '*File:* %s',
-            ],
-        ],
-        [
-            "type" => "section",
-            "text" => [
-                "type" => "mrkdwn",
                 "text" => ' *Line:* %s',
             ],
         ],
